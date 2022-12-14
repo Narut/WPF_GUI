@@ -1,11 +1,11 @@
 # WPF GUI
-##### WPF GUI
+## WPF GUI
 ```
 Dark Blue Theme WPF Form Template
 ```
 
-##### Useful function
-#### asyncInvokeText
+## Useful function
+#### 1) asyncInvokeText
 ```
         private async void asyncInvokeText(dynamic obj,string txt)
         {
@@ -13,7 +13,7 @@ Dark Blue Theme WPF Form Template
         } 
 ```
 
-#### Task.Run
+#### 2)  Task.Run
 ```
 long runningNo = 0;
 bool isRunning = true;
