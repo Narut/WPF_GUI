@@ -13,9 +13,17 @@ Dark Blue Theme WPF Form Template
         } 
 ```
 
+#### Task.Run
 ```
-        private async void asyncInvokeText(dynamic obj,string txt)
+long runningNo = 0;
+bool isRunning = true;
+    Task.Run(async () =>
+    {
+        while (isRunning)
         {
-            await Dispatcher.BeginInvoke((Action)(() => obj.Text = txt  ));
-        } 
+            asyncInvokeText(tbStatus, "Status : " + runningNo.ToString());
+            await Task.Delay(1);
+            runningNo += 1;
+        }
+    });
 ```
